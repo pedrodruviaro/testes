@@ -1,0 +1,58 @@
+.benefits {
+    border: 2px solid red;
+
+    .image {
+        display: grid;
+        place-items: center;
+        pointer-events: none;
+
+        position: relative;
+        left: -7rem;
+        position: absolute;
+        z-index: 10;
+    }
+}
+
+.slider--container {
+    display: grid;
+    position: relative;
+}
+
+// Swiper
+.swiper {
+    width: 100%;
+    height: 32.5rem;
+    border-radius: 8px;
+}
+
+.swiper-slide {
+    color: #ffffff;
+    background: linear-gradient(180deg, #e89f87 -65.72%, #fa0f00 100%);
+    padding-right: 4rem;
+    border-radius: 8px;
+    cursor: grab;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+            font-size: 1.75rem;
+            line-height: 1.2;
+            margin-bottom: 1.75rem;
+        }
+
+        ul {
+            display: grid;
+            gap: 1rem;
+
+            li {
+                font-size: 1.25rem;
+            }
+        }
+    }
+}

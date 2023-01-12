@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <script>
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : ""
+                j.async = true
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, "script", "dataLayer", "GTM-NC8KF98")
+        </script>
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Riversoft | Assinatura Digital para Transferência de Arquivos</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+
+        <!-- Metas -->
+        <meta name="description" content="" />
+
+        <!-- OG -->
+        <meta name="og:title" content="" />
+        <meta name="og:description" content="" />
+        <meta name="og:image" content="" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./styles/css/style.css" />
+    </head>
+    <body>
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-NC8KF98"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
+
+        <!-- Hero -->
+        <section class="hero" style="display: none">
+            <div class="container hero__container">
+                <div class="content">
+                    <img src="images/logo-white.png" class="logo" alt="Riversoft" />
+
+                    <h1>Envie e receba arquivos de forma segura com a <span>assinatura digital</span></h1>
+                    <p>
+                        A Riversoft oferece
+                        <strong
+                            >uma solução completa de transferência de arquivos com assinatura digital para
+                            empresas</strong
+                        >
+                        que precisam enviar e receber arquivos e integrar informações com mais segurança.
+                    </p>
+                    <p>
+                        Conte com uma ferramenta robusta, fácil de usar e em conformidade com a LGPD,
+                        <strong>para todo tipo de arquivo e todo tipo de empresa</strong>.
+                    </p>
+                </div>
+
+                <div class="form" id="form">
+                    <button class="close-form" aria-label="Fechar formulário">
+                        <img src="./images/close-form.png" aria-hidden="true" alt="" />
+                    </button>
+
+                    <h3>
+                        Entre em contato e <span>saiba mais sobre a assinatura digital</span> para transferência de
+                        arquivos.
+                    </h3>
+
+                    <form>
+                        <div class="label-float">
+                            <input type="text" name="nome" placeholder=" " data-field="nome" />
+                            <label>Nome Completo <span>*</span></label>
+                        </div>
+
+                        <div class="label-float">
+                            <input type="email" name="email" placeholder=" " data-field="email" />
+                            <label>Email Corporativo <span>*</span></label>
+                        </div>
+
+                        <div class="label-float">
+                            <input type="tel" name="telefone" placeholder=" " data-field="phone" />
+                            <label>Telefone <span>*</span></label>
+                        </div>
+
+                        <!-- <div class="label-float">
+                            <input type="text" name="cargo" placeholder=" " data-field="cargo" />
+                            <label>Cargo <span>*</span></label>
+                        </div> -->
+
+                        <div class="label-float">
+                            <select data-select data-field="cargo">
+                                <option value=""></option>
+                                <option value="Sócio/Proprietário(a)">Sócio/Proprietário(a)</option>
+                                <option value="CEO/Presidente">CEO/Presidente</option>
+                                <option value="Diretor(a)">Diretor(a)</option>
+                                <option value="Gerente">Gerente</option>
+                                <option value="Coordenador(a)">Coordenador(a)</option>
+                                <option value="Administrador">Administrador</option>
+                                <option value="Estagiário(a)">Estagiário(a)</option>
+                                <option value="Analista">Analista</option>
+                                <option value="Outros">Outros</option>
+                            </select>
+                            <label>Cargo <span>*</span></label>
+                        </div>
+
+                        <div class="label-float">
+                            <input type="text" name="empresa" placeholder=" " data-field="empresa" />
+                            <label>Empresa <span>*</span></label>
+                        </div>
+
+                        <label class="mb-3">
+                            <input type="checkbox" name="consent" />
+                            Estou ciente e concordo que esses dados sejam utilizados para envio de ofertas e conteúdos
+                            personalizados de acordo com os meus interesses. A qualquer momento posso voltar atrás nessa
+                            decisão.*
+                        </label>
+
+                        <input type="hidden" name="utm_term" data-field />
+                        <input type="hidden" name="utm_content" data-field />
+                        <input type="hidden" name="utm_campaign" data-field />
+                        <input type="hidden" name="utm_source" data-field />
+                        <input type="hidden" name="utm_medium" data-field />
+                        <input type="hidden" name="url_pagina" data-field />
+
+                        <a class="btn form-submit">Enviar</a>
+                    </form>
+                </div>
+            </div>
+
+            <video autoplay muted loop class="video" id="hero--video">
+                <source src="images/hero--video.webm" />
+            </video>
+
+            <script>
+                document.getElementById("hero--video").play()
+            </script>
+
+            <a href="#brands" class="scroll-btn">
+                <span class="mouse">
+                    <span> </span>
+                </span>
+            </a>
+        </section>
+
+        <section class="benefits spacing">
+            <div class="container benefits__container">
+                <div class="slider--container">
+                    <div class="image">
+                        <img src="images/mockup-video.png" alt="" />
+                    </div>
+
+                    <div class="swiper benefitsSwiper">
+                        <div class="swiper-wrapper">
+                            <article class="swiper-slide">
+                                <div></div>
+                                <div class="content">
+                                    <h3>1- As vantagens que a sua empresa merece na palma da mão!</h3>
+                                    <ul>
+                                        <li>• Edite textos e imagens direto do PDF e em qualquer lugar</li>
+                                        <li>• Crie facilmente um PDF a partir de qualquer tipo de arquivo</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="swiper-slide">
+                                <div></div>
+                                <div class="content">
+                                    <h3>2- As vantagens que a sua empresa merece na palma da mão!</h3>
+                                    <ul>
+                                        <li>• Edite textos e imagens direto do PDF e em qualquer lugar</li>
+                                        <li>• Crie facilmente um PDF a partir de qualquer tipo de arquivo</li>
+                                    </ul>
+                                </div>
+                            </article>
+
+                            <article class="swiper-slide">
+                                <div></div>
+                                <div class="content">
+                                    <h3>3- As vantagens que a sua empresa merece na palma da mão!</h3>
+                                    <ul>
+                                        <li>• Edite textos e imagens direto do PDF e em qualquer lugar</li>
+                                        <li>• Crie facilmente um PDF a partir de qualquer tipo de arquivo</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                        <!-- <div class="swiper-steps-button-next">next</div>
+                        <div class="swiper-steps-button-prev">prev</div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <button class="btn btn-mobile">QUERO CONVERSAR</button>
+
+        <!-- JS -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="js/main.js"></script>
+        <script src="js/validations.js"></script>
+
+        <!-- RD Station -->
+        <script
+            type="text/javascript"
+            async
+            src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/903af4c5-a850-4eb0-99ab-4526d54ea389-loader.js"
+        ></script>
+
+        <!-- Swiper -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"
+            integrity="sha512-k2o1KZdvUi59PUXirfThShW9Gdwtk+jVYum6t7RmyCNAVyF9ozijFpvLEWmpgqkHuqSWpflsLf5+PEW6Lxy/wA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.css"
+            integrity="sha512-wbWvHguVvzF+YVRdi8jOHFkXFpg7Pabs9NxwNJjEEOjiaEgjoLn6j5+rPzEqIwIroYUMxQTQahy+te87XQStuA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <script>
+            const benefitsSwiper = new Swiper(".benefitsSwiper", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-steps-button-next",
+                    prevEl: ".swiper-steps-button-prev",
+                },
+                slidesPerView: 1,
+                spaceBetween: 100,
+                simulateTouch: true,
+            })
+        </script>
+
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    </body>
+</html>

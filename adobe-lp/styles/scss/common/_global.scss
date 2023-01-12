@@ -1,0 +1,130 @@
+// Heading
+@font-face {
+    font-family: "Avenir LTS Book";
+    src: url("../../fonts/AvenirLTStd-Book.otf");
+    font-display: swap;
+}
+
+$colors: (
+    "clr-neutral-100": #ffffff,
+    "clr-neutral-300": #969696,
+    "clr-neutral-700": #202020,
+
+    "clr-accent-blue-light": #3cbfd4,
+    "clr-accent-blue-dark": #071e34,
+);
+
+:root {
+    @each $name, $value in $colors {
+        --#{$name}: #{$value};
+    }
+}
+
+:root {
+    --ff-heading: "Space Grotesk", sans-serif;
+    --ff-primary: "Avenir LTS Book", sans-serif;
+
+    --spacing: 4rem;
+
+    --clr-placeholder: #707070;
+    --clr-field: var(--clr-neutral-700, #232323);
+
+    @media screen and (min-width: 45em) {
+        --spacing: 5rem;
+    }
+
+    @media screen and (min-width: 70em) {
+        --spacing: 5.5rem;
+    }
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-padding-top: 2rem;
+    font-size: 93.75%;
+
+    @media screen and (min-width: 45em) {
+        font-size: 100%;
+    }
+}
+
+body {
+    font-family: var(--ff-primary);
+
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-neutral-700);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-heading);
+}
+
+p {
+    max-width: var(--width, unset);
+}
+
+.center {
+    margin-inline: auto;
+    text-align: center;
+}
+
+.container {
+    width: min(90%, 75em);
+    margin-inline: auto;
+}
+
+.spacing {
+    padding-block: var(--spacing);
+}
+
+.flow {
+    p + p {
+        margin-top: 1rem;
+    }
+}
+
+@each $name, $value in $colors {
+    .#{$name} {
+        color: #{$value};
+    }
+}
+
+$fontWeights: (300, 400, 500, 600, 700);
+
+@each $weight in $fontWeights {
+    .fw-#{$weight} {
+        font-weight: $weight;
+    }
+}
+
+::selection {
+    background-color: var(--clr-accent-blue-light);
+    color: var(--clr-neutral-100);
+}
+
+::-webkit-scrollbar {
+    width: 0.85em;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--clr-accent-blue-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--clr-accent-blue-dark);
+    border: 2px solid var(--clr-accent-blue-light);
+    border-radius: 8px;
+}
+
+body {
+    padding-right: 0 !important;
+}
